@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #2e2c2c;
+    --secondary-color: #f9f227;
+    --accent1: #ffff;
+    --accent2: #ff8400;
+
+    --headingfont : "Coustard", "Roboto";
+    --paragraphfont: "Cormorant Upright";
+}
+
+/*general*/
+
+a {
+    text-decoration: none;
+    color: var(--accent1);
+    font-size: 1.2rem;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1440px;
+    background-color: var(--primary-color);
+    color: var(--accent1);
+}
+
+h2 {
+    font-family: var(--headingfont);
+    font-size: 1.6rem;
+}
+
+p {
+    font-family: var(--paragraphfont);
+    font-size: 1.4rem;
+}
+
+/*logo, nav, hero*/
+#logo_link img {
+    width: 130px;
+    padding: 1rem;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul {
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+#mypic {
+    width: 60%;
+    position: absolute;
+    left: 85px;
+}
+
+/*mywork hero and hero image additions*/
+.img-container {
+    border: 2px solid var(--secondary-color);
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.h-pic {
+    position: absolute;
+    width: 80%;
+    left: 20px;
+}
+
+.container {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border: 2px solid var(--accent2);
+    position: relative;
+    border-radius: 3rem 0 3rem 0;
+    padding: 1rem;
+}
+
+.image-container {
+    display: inline-block;
+    width: 450px;
+    height: 300px;
+    border: 2px solid var(--accent2);
+    border-radius: 3rem 0 3rem 0;
+    position: absolute;
+    bottom: 65px;
+    left: -59px;
+    overflow: hidden;
+}
+
+#hero {
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem;
+}
+
+#hero h1 {
+    font-family: var(--paragraphfont);
+    font-size: 2.4rem;
+    margin-bottom: 5px;
+}
+
+#hero span {
+    font-family: "Courgette", "Crimpson Pro";
+}
+
+#hero a {
+    display: block;
+    width: 40%;
+    border: 2px solid var(--secondary-color);
+    padding: .8rem;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+/*About*/
+.About {
+    padding: 5rem 9rem 9rem 9rem;
+}
+
+/*added skills heading*/
+.About h2, .skills h2 {
+    margin-bottom: 30px;
+}
+
+.About p {
+    text-align: justify;
+    padding: .5rem 1.5rem 1.5rem 1.5rem;
+}
+
+/*skills*/
+.skills {
+    text-align: center;
+    padding: 0 4rem 4rem 4rem;
+}
+
+.skills img {
+    width: 300px; 
+    border-radius: 50px;
+}
+
+.card {
+    padding: 1rem;
+}
+
+/*projects mywork page*/
+.p-card img {
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+.p-card {
+    display: inline-block;
+    padding: 1rem;
+    border: 2px solid var(--accent1);
+    border-radius: 15px;
+   
+}
+
+#projects {
+    padding: 8rem;
+}
+
+/*footer and social media*/
+.socials img {
+    width: 28px;
+    opacity: 90%;
+}
+
+.line {
+    background-color: var(--accent1);
+    height: 5px;
+    width: 40%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8rem;
+}
+
+.s-container {
+    text-align: center;
+}
